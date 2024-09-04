@@ -1453,3 +1453,77 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  /* General heading adjustments for smaller screens */
+  h1, h2, h3, .bold {
+      font-size: 1.5em; /* Adjust based on your design preferences */
+  }
+
+  /* Further reduction for very small screens (phones in portrait mode) */
+  @media (max-width: 480px) {
+      h1, h2, h3, .bold {
+          font-size: 1.2em; /* Smaller font for mobile devices */
+      }
+  }
+
+  /* Specific sections */
+  #colorlib-about h2,
+  #colorlib-services h2,
+  #colorlib-work h2,
+  #education-section h2,
+  #colorlib-blog h2,
+  footer h2 {
+      font-size: 1.5em; /* Adjust the size of section titles */
+  }
+
+  /* Smaller adjustments for footer and sections */
+  footer h2 {
+      font-size: 1.2em; /* Make the footer heading even smaller */
+  }
+  
+  /* Further adjustments for headings inside sections */
+  .heading {
+      font-size: 1.3em; /* For smaller screens, reduce the heading size */
+  }
+}
+
+
+
+/* General styles for the text inside image overlays */
+.work-name h2 {
+  font-size: 2em; /* Adjust this for larger screens */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+/* Media query for smaller screens (tablets and mobile devices) */
+@media (max-width: 767px) {
+  /* Reduce the font size of the overlay text */
+  .work-name h2 {
+      font-size: 1.5em; /* Adjust the size for smaller screens */
+      padding: 10px;
+  }
+}
+
+/* Further adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+  /* Even smaller text for phones */
+  .work-name h2 {
+      font-size: 1.2em; /* Further reduce size for phones */
+      padding: 8px;
+  }
+
+  /* Adjust the white box width and height for small screens */
+  .work-name {
+      width: 90%; /* Adjusts the box width for small screens */
+      height: auto; /* Ensures the box adapts to the text */
+      margin: auto;
+  }
+  
+  .work-img {
+      background-size: cover; /* Ensure image covers container */
+      background-position: center;
+  }
+}
