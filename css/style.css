@@ -1329,3 +1329,127 @@ input[type="text"] {
 
 
 
+/* General styling for mobile devices */
+@media (max-width: 767px) {
+  /* Ensure content fits the screen */
+  body {
+      padding: 10px;
+  }
+
+  /* Adjust navbar and navigation menu */
+  .colorlib-navbar-brand {
+      font-size: 18px;
+  }
+
+  .colorlib-table-cell {
+      padding: 10px;
+  }
+
+  #colorlib-main-nav ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+  }
+
+  #colorlib-main-nav ul li {
+      margin-bottom: 10px;
+  }
+
+  /* Adjust sections to stack vertically */
+  .one-third, .one-forth {
+      width: 100%;
+  }
+
+  /* Fix image scaling in gallery */
+  .gallery {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Adjust text sizes */
+  h2, h3, .heading {
+      font-size: 1.2em;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+
+  /* Handle carousel images */
+  .owl-carousel3 .item img, .owl-carousel1 .item img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Work entry adjustments */
+  .work-entry .desc {
+      text-align: center;
+      padding: 10px;
+  }
+
+  .work-entry .work-img {
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+  }
+
+  /* Footer */
+  footer {
+      padding: 20px 10px;
+  }
+
+  .colorlib-social-icons a {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+}
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 480px) {
+  .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  h2, h3 {
+      font-size: 1em;
+  }
+  
+  .col-md-4, .col-md-5, .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.owl-carousel3 .item img, .owl-carousel1 .item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media (max-width: 480px) {
+  .colorlib-nav-toggle {
+      position: relative;
+      display: block;
+      top: 0;
+  }
+
+  #colorlib-main-nav ul {
+      display: block;
+  }
+
+  #colorlib-main-nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
