@@ -17,10 +17,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // ✅ DO NOT USE external here
-  build: {
-    rollupOptions: {
-      // ❌ remove the `external` line completely
-    },
-  },
 }));
