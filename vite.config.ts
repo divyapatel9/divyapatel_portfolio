@@ -17,9 +17,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // ✅ DO NOT USE external here
   build: {
     rollupOptions: {
-      external: ["@emailjs/browser"], // ✅ THIS LINE FIXES THE ERROR
+      // ❌ remove the `external` line completely
     },
   },
 }));
