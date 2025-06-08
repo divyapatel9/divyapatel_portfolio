@@ -3,6 +3,7 @@ import { Mail, Phone, Linkedin, Github, MapPin, Send, User, MessageSquare } from
 import emailjs from '@emailjs/browser';
 
 
+
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
