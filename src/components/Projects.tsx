@@ -34,6 +34,7 @@ const Projects = () => {
       longDescription: "Developed a sophisticated on-device RAG engine that prioritizes privacy and security while delivering exceptional search performance through semantic understanding and query expansion. This system processes data locally, ensuring complete privacy while maintaining high-performance semantic search capabilities.",
       technologies: ["Python", "Sentence Transformers", "FAISS", "Hugging Face", "Tkinter"],
       features: [
+
         "Semantic search with synonym-based query expansion",
         "Private on-device processing with zero data transmission",
         "FAISS vector database for lightning-fast similarity search",
@@ -46,6 +47,26 @@ const Projects = () => {
       image: "/api/placeholder/600/400",
       github: "https://github.com/divyapatel9/-Secure-and-Private-On-Device-RAG-Engine"
     },
+    {
+  "title": "Smart Menu System",
+  "description": "An AI-powered restaurant menu with voice search and real-time dynamic pricing.",
+  "longDescription": "A web application designed to create a personalized and profitable dining experience. This system features an interactive menu that understands natural language voice commands using a FAISS-powered semantic search engine. The Python Flask backend includes a rule-based dynamic pricing engine to optimize revenue and a detailed analytics suite to log both orders and search queries.",
+  "technologies": ["Python", "Flask", "Sentence-Transformers", "FAISS", "SQLite", "JavaScript", "HTML5", "CSS3"],
+  "features": [
+    "AI-powered semantic search for natural language queries (e.g., 'What are your spicy food below $10')",
+    "Voice command integration for hands-free menu filtering",
+    "Rule-based dynamic pricing engine based on time, demand, and inventory",
+    "Pre-order validation requiring customer name and table number",
+    "Full shopping cart and ordering system",
+    "Dual-database architecture for transactional orders and search analytics",
+    
+  ],
+  icon: <img src="/icons/smartmenu.png" alt="Smart Menu" className="w-10 h-10 object-contain" />,
+  "color": "from-red-500 to-orange-500",
+  "category": "Full-Stack & AI",
+  "image": "/api/placeholder/600/400",
+  "github": "https://github.com/divyapatel9/Smart_Menu_System"
+},
     {
       title: "FIMS - Food Industry Management",
       description: "Comprehensive database system for food industry operations",
