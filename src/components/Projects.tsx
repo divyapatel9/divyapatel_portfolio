@@ -27,163 +27,159 @@ const Projects = () => {
     };
   }, []);
 
-  const projects = [
-    {
-      title: "Secure and Private On-Device RAG Engine",
-      description: "Advanced retrieval-augmented generation system with semantic search capabilities",
-      longDescription: "Developed a sophisticated on-device RAG engine that prioritizes privacy and security while delivering exceptional search performance through semantic understanding and query expansion. This system processes data locally, ensuring complete privacy while maintaining high-performance semantic search capabilities.",
-      technologies: ["Python", "Sentence Transformers", "FAISS", "Hugging Face", "Tkinter"],
-      features: [
+ const projects = [
+  {
+    title: "Secure and Private On-Device RAG Engine",
+    description: "Advanced retrieval-augmented generation system with semantic search capabilities",
+    longDescription: "Developed a sophisticated on-device RAG engine that prioritizes privacy and security while delivering exceptional search performance through semantic understanding and query expansion. This system processes data locally, ensuring complete privacy while maintaining high-performance semantic search capabilities.",
+    technologies: ["Python", "Sentence Transformers", "FAISS", "Hugging Face", "Tkinter"],
+    features: [
+      "Semantic search with synonym-based query expansion",
+      "Private on-device processing with zero data transmission",
+      "FAISS vector database for lightning-fast similarity search",
+      "Interactive GUI with real-time query suggestions",
+      "Advanced NLP preprocessing and tokenization"
+    ],
+    icon: <img src="/icons/rag.png" alt="RAG Engine" className="w-10 h-10 object-contain" />,
+    color: "from-purple-400 to-pink-500",
+    category: "AI/ML",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/-Secure-and-Private-On-Device-RAG-Engine"
+  },
+  {
+    title: "Smart Menu System",
+    description: "An AI-powered restaurant menu with voice search and real-time dynamic pricing.",
+    longDescription: "A web application designed to create a personalized and profitable dining experience. This system features an interactive menu that understands natural language voice commands using a FAISS-powered semantic search engine. The Python Flask backend includes a rule-based dynamic pricing engine to optimize revenue and a detailed analytics suite to log both orders and search queries.",
+    technologies: ["Python", "Flask", "Sentence-Transformers", "FAISS", "SQLite", "JavaScript", "HTML5", "CSS3"],
+    features: [
+      "AI-powered semantic search for natural language queries (e.g., 'What are your spicy food below $10')",
+      "Voice command integration for hands-free menu filtering",
+      "Rule-based dynamic pricing engine based on time, demand, and inventory",
+      "Pre-order validation requiring customer name and table number",
+      "Full shopping cart and ordering system",
+      "Dual-database architecture for transactional orders and search analytics"
+    ],
+    icon: <img src="/icons/smartmenu.png" alt="Smart Menu" className="w-10 h-10 object-contain" />,
+    color: "from-red-500 to-orange-500",
+    category: "Full-Stack & AI",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/Smart_Menu_System"
+  },
+  {
+    title: "FIMS - Food Industry Management",
+    description: "Comprehensive database system for food industry operations",
+    longDescription: "Designed and implemented a complete food industry management system with advanced database modeling, optimization, and real-time data processing. The system manages inventory, supply chain, and quality control for multiple food processing facilities.",
+    technologies: ["MySQL", "PostgreSQL", "Stored Procedures", "Triggers", "ER Modeling"],
+    features: [
+      "3NF normalized database design for data integrity",
+      "Complex stored procedures for business logic automation",
+      "Real-time inventory tracking with predictive analytics",
+      "Advanced reporting dashboard with data visualization",
+      "Multi-tenant architecture supporting 50+ clients"
+    ],
+    icon: <img src="/icons/fims.png" alt="FIMS DBMS" className="w-10 h-10 object-contain" />,
+    color: "from-amber-400 to-orange-500",
+    category: "Database",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/food-industry-dbms"
+  },
+  {
+    title: "Interactive Data Analytics Visualizations",
+    description: "Interactive D3.js dashboard for resident economic trends",
+    longDescription: "Built advanced D3.js visualizations for analyzing 15 months of economic data of Ohio, as part of VAST MC 2023. Created interactive charts and maps that reveal business trends, employee retention, and financial health patterns among residents.",
+    technologies: ["D3.js", "JavaScript", "HTML", "CSS"],
+    features: [
+      "Line, bar, scatter, and Sankey diagrams for insights",
+      "City map highlighting business activity and changes",
+      "Dynamic filters and interactive tooltips",
+      "Modular component-based D3 implementation",
+      "Responsive design optimized for exploration"
+    ],
+    icon: <img src="/icons/dv.png" alt="Data Visualization" className="w-10 h-10 object-contain" />,
+    color: "from-lime-400 to-green-500",
+    category: "Data Viz",
+    image: "/api/placeholder/600/400"
+  },
+  {
+    title: "Elastic Face Recognition on AWS",
+    description: "Scalable IaaS face recognition with EC2 and S3",
+    longDescription: "Designed and deployed a scalable, cloud-native face recognition system using AWS infrastructure-as-a-service (IaaS) components. The project featured a multi-tier architecture (Web, App, and Data tiers) that leveraged deep learning and elastic cloud resources to provide efficient, on-demand face recognition.",
+    technologies: ["AWS EC2", "S3", "Flask", "OpenCV", "Python"],
+    features: [
+      "Implements a 3-tier cloud architecture: Web, App, and Data Tiers",
+      "Integrates deep learning-based face recognition using Torch",
+      "Uses AWS SQS for asynchronous message-based tier communication",
+      "Stores image data and results in Amazon S3 with structured naming",
+      "Auto-scales EC2 instances in the App Tier from 0 to 20 based on traffic",
+      "Custom AMIs ensure fast instance boot-up with pre-installed ML dependencies",
+      "Adheres to cloud-native design principles and AWS best practices"
+    ],
+    icon: <img src="/icons/cloud1.png" alt="Cloud Project" className="w-10 h-10 object-contain" />,
+    color: "from-cyan-400 to-blue-500",
+    category: "Cloud",
+    image: "/api/placeholder/600/400"
+  },
+  {
+    title: "Scalable Video Analysis with AWS Lambda",
+    description: "Serverless pipeline for automatic video processing",
+    longDescription: "Built a fully serverless, scalable video analysis system using AWS Lambda to perform on-demand video frame extraction and face recognition. The architecture utilizes an event-driven pipeline and optimizes compute usage to achieve low-latency, cost-efficient processing of user-uploaded videos.",
+    technologies: ["AWS Lambda", "AWS SQS", "S3", "Python", "OpenCV", "API Gateway"],
+    features: [
+      "Fully serverless architecture using AWS Lambda",
+      "Frame extraction from videos using FFmpeg in Lambda",
+      "Face detection and recognition using OpenCV and ResNet-34",
+      "Event-driven pipeline triggered by S3 upload events",
+      "Organized data flow using input, intermediate, and output S3 buckets",
+      "Optimized for low latency and minimal AWS costs",
+      "Scalable to handle multiple video uploads concurrently"
+    ],
+    icon: <img src="/icons/cloud2.png" alt="Cloud Project" className="w-10 h-10 object-contain" />,
+    color: "from-indigo-400 to-blue-600",
+    category: "Serverless",
+    image: "/api/placeholder/600/400"
+  },
+  {
+    title: "Mouse Control Using Hand Gestures",
+    description: "Real-time webcam-based hand gesture mouse control",
+    longDescription: "Developed a computer vision-based system that enables users to control mouse movements and clicks using hand gestures. This project leverages a webcam and machine learning models to detect hand landmarks in real time, allowing for contactless computer interaction.",
+    technologies: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI"],
+    features: [
+      "Tracks real-time hand landmarks using MediaPipe",
+      "Maps index finger movement to cursor position on screen",
+      "Detects finger distance to simulate left-click gestures",
+      "Implements right-click and drag functionality using gesture combinations",
+      "Runs on webcam input with no additional hardware required",
+      "Optimized for smooth cursor movement with frame skipping logic",
+      "Modular codebase for easy extension or integration with other gesture-based tasks"
+    ],
+    icon: <img src="/icons/iot.png" alt="IOT Project" className="w-10 h-10 object-contain" />,
+    color: "from-fuchsia-400 to-rose-500",
+    category: "CV/UI",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/Mouse-Control-Using-Hand-Gestures"
+  },
+  {
+    title: "OS Page Replacement Visualization",
+    description: "Simulates FIFO, LRU, Optimal, and other algorithms",
+    longDescription: "Built a browser-based visual simulation tool to demonstrate how various page replacement algorithms manage memory in an operating system. This project allows users to input a page reference string and the number of memory frames, and then visually observe how different algorithms handle page faults step by step.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    features: [
+      "Implements 5 core algorithms: FIFO, LRU, MRU, Optimal, Random",
+      "Interactive input for custom reference strings and frame size",
+      "Real-time visualization of page insertion and replacement steps",
+      "Tracks and displays total page faults per algorithm",
+      "Clear table-based UI to represent memory frame state",
+      "Modular JavaScript code structure for each algorithm",
+      "Designed for educational purposes with beginner-friendly UX"
+    ],
+    icon: <img src="/icons/os.png" alt="OS Page Replacement Project" className="w-10 h-10 object-contain" />,
+    color: "from-yellow-400 to-red-500",
+    category: "Systems",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/OS-Page-Replacement-Project"
+  }
+];
 
-        "Semantic search with synonym-based query expansion",
-        "Private on-device processing with zero data transmission",
-        "FAISS vector database for lightning-fast similarity search",
-        "Interactive GUI with real-time query suggestions",
-        "Advanced NLP preprocessing and tokenization"
-      ],
-      icon: <img src="/icons/rag.png" alt="RAG Engine" className="w-10 h-10 object-contain" />,
-      color: "from-purple-400 to-pink-500",
-      category: "AI/ML",
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/divyapatel9/-Secure-and-Private-On-Device-RAG-Engine"
-    },
-    {
-  "title": "Smart Menu System",
-  "description": "An AI-powered restaurant menu with voice search and real-time dynamic pricing.",
-  "longDescription": "A web application designed to create a personalized and profitable dining experience. This system features an interactive menu that understands natural language voice commands using a FAISS-powered semantic search engine. The Python Flask backend includes a rule-based dynamic pricing engine to optimize revenue and a detailed analytics suite to log both orders and search queries.",
-  "technologies": ["Python", "Flask", "Sentence-Transformers", "FAISS", "SQLite", "JavaScript", "HTML5", "CSS3"],
-  "features": [
-    "AI-powered semantic search for natural language queries (e.g., 'What are your spicy food below $10')",
-    "Voice command integration for hands-free menu filtering",
-    "Rule-based dynamic pricing engine based on time, demand, and inventory",
-    "Pre-order validation requiring customer name and table number",
-    "Full shopping cart and ordering system",
-    "Dual-database architecture for transactional orders and search analytics",
-    
-  ],
-  icon: <img src="/icons/smartmenu.png" alt="Smart Menu" className="w-10 h-10 object-contain" />,
-  "color": "from-red-500 to-orange-500",
-  "category": "Full-Stack & AI",
-  "image": "/api/placeholder/600/400",
-  "github": "https://github.com/divyapatel9/Smart_Menu_System"
-},
-    {
-      title: "FIMS - Food Industry Management",
-      description: "Comprehensive database system for food industry operations",
-      longDescription: "Designed and implemented a complete food industry management system with advanced database modeling, optimization, and real-time data processing. The system manages inventory, supply chain, and quality control for multiple food processing facilities.",
-      technologies: ["MySQL", "PostgreSQL", "Stored Procedures", "Triggers", "ER Modeling"],
-      features: [
-        "3NF normalized database design for data integrity",
-        "Complex stored procedures for business logic automation",
-        "Real-time inventory tracking with predictive analytics",
-        "Advanced reporting dashboard with data visualization",
-        "Multi-tenant architecture supporting 50+ clients"
-      ],
-      icon: <img src="/icons/fims.png" alt="FIMS DBMS" className="w-10 h-10 object-contain" />,
-      color: "from-amber-400 to-orange-500",
-      category: "Database",
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/divyapatel9/food-industry-dbms"
-    },
-    {
-      title: "Interactive Data Analytics Visualizations",
-      description: "Interactive D3.js dashboard for resident economic trends",
-      longDescription: "Built advanced D3.js visualizations for analyzing 15 months of economic data of Ohio, as part of VAST MC 2023. Created interactive charts and maps that reveal business trends, employee retention, and financial health patterns among residents.",
-      technologies: ["D3.js", "JavaScript", "HTML", "CSS"],
-      features: [
-        "Line, bar, scatter, and Sankey diagrams for insights",
-        "City map highlighting business activity and changes",
-        "Dynamic filters and interactive tooltips",
-        "Modular component-based D3 implementation",
-        "Responsive design optimized for exploration"
-      ],
-      icon: <img src="/icons/dv.png" alt="Data Visualization" className="w-10 h-10 object-contain" />,
-      color: "from-lime-400 to-green-500",
-      category: "Data Viz",
-      image: "/api/placeholder/600/400"
-    },
-    {
-      title: "Elastic Face Recognition on AWS",
-      description: "Scalable IaaS face recognition with EC2 and S3",
-      longDescription: "Designed and deployed a scalable, cloud-native face recognition system using AWS infrastructure-as-a-service (IaaS) components. The project featured a multi-tier architecture (Web, App, and Data tiers) that leveraged deep learning and elastic cloud resources to provide efficient, on-demand face recognition.",
-      technologies: ["AWS EC2", "S3", "Flask", "OpenCV", "Python"],
-      features: [
-  "Implements a 3-tier cloud architecture: Web, App, and Data Tiers",
-  "Integrates deep learning-based face recognition using Torch",
-  "Uses AWS SQS for asynchronous message-based tier communication",
-  "Stores image data and results in Amazon S3 with structured naming",
-  "Auto-scales EC2 instances in the App Tier from 0 to 20 based on traffic",
-  "Custom AMIs ensure fast instance boot-up with pre-installed ML dependencies",
-  "Adheres to cloud-native design principles and AWS best practices"
-],
-      icon: <img src="/icons/cloud1.png" alt="Cloud Project" className="w-10 h-10 object-contain" />,
-      color: "from-cyan-400 to-blue-500",
-      category: "Cloud",
-      image: "/api/placeholder/600/400"
-    },
-    {
-      title: "Scalable Video Analysis with AWS Lambda",
-      description: "Serverless pipeline for automatic video processing",
-      longDescription: "Built a fully serverless, scalable video analysis system using AWS Lambda to perform on-demand video frame extraction and face recognition. The architecture utilizes an event-driven pipeline and optimizes compute usage to achieve low-latency, cost-efficient processing of user-uploaded videos.",
-      technologies: ["AWS Lambda", "AWS SQS", "S3", "Python", "OpenCV", "API Gateway"],
-      features: [
-  "Fully serverless architecture using AWS Lambda",
-  "Frame extraction from videos using FFmpeg in Lambda",
-  "Face detection and recognition using OpenCV and ResNet-34",
-  "Event-driven pipeline triggered by S3 upload events",
-  "Organized data flow using input, intermediate, and output S3 buckets",
-  "Optimized for low latency and minimal AWS costs",
-  "Scalable to handle multiple video uploads concurrently"
-]
-,
-      icon: <img src="/icons/cloud2.png" alt="Cloud Project" className="w-10 h-10 object-contain" />,
-      color: "from-indigo-400 to-blue-600",
-      category: "Serverless",
-      image: "/api/placeholder/600/400"
-    },
-    {
-      title: "Mouse Control Using Hand Gestures",
-      description: "Real-time webcam-based hand gesture mouse control",
-      longDescription: "Developed a computer vision-based system that enables users to control mouse movements and clicks using hand gestures. This project leverages a webcam and machine learning models to detect hand landmarks in real time, allowing for contactless computer interaction.",
-      technologies: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI"],
-      features: [
-  "Tracks real-time hand landmarks using MediaPipe",
-  "Maps index finger movement to cursor position on screen",
-  "Detects finger distance to simulate left-click gestures",
-  "Implements right-click and drag functionality using gesture combinations",
-  "Runs on webcam input with no additional hardware required",
-  "Optimized for smooth cursor movement with frame skipping logic",
-  "Modular codebase for easy extension or integration with other gesture-based tasks"
-],
-
-      icon: <img src="/icons/iot.png" alt="IOT Project" className="w-10 h-10 object-contain" />,
-      color: "from-fuchsia-400 to-rose-500",
-      category: "CV/UI",
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/divyapatel9/Mouse-Control-Using-Hand-Gestures"
-    },
-    {
-      title: "OS Page Replacement Visualization",
-      description: "Simulates FIFO, LRU, Optimal, and other algorithms",
-      longDescription: "Built a browser-based visual simulation tool to demonstrate how various page replacement algorithms manage memory in an operating system. This project allows users to input a page reference string and the number of memory frames, and then visually observe how different algorithms handle page faults step by step.",
-      technologies: ["JavaScript", "HTML", "CSS"],
-     features: [
-  "Implements 5 core algorithms: FIFO, LRU, MRU, Optimal, Random",
-  "Interactive input for custom reference strings and frame size",
-  "Real-time visualization of page insertion and replacement steps",
-  "Tracks and displays total page faults per algorithm",
-  "Clear table-based UI to represent memory frame state",
-  "Modular JavaScript code structure for each algorithm",
-  "Designed for educational purposes with beginner-friendly UX"
-],
-
-      icon: <img src="/icons/os.png" alt="OS Page Replacement Project" className="w-10 h-10 object-contain" />,
-      color: "from-yellow-400 to-red-500",
-      category: "Systems",
-      image: "/api/placeholder/600/400",
-      github: "https://github.com/divyapatel9/OS-Page-Replacement-Project"
-    }
-  ];
   const openModal = (index: number) => {
     setSelectedProject(index);
     document.body.style.overflow = 'hidden';
