@@ -66,23 +66,25 @@ const Projects = () => {
     github: "https://github.com/divyapatel9/Smart_Menu_System"
   },
   {
-    title: "FIMS - Food Industry Management",
-    description: "Comprehensive database system for food industry operations",
-    longDescription: "Designed and implemented a complete food industry management system with advanced database modeling, optimization, and real-time data processing. The system manages inventory, supply chain, and quality control for multiple food processing facilities.",
-    technologies: ["MySQL", "PostgreSQL", "Stored Procedures", "Triggers", "ER Modeling"],
-    features: [
-      "3NF normalized database design for data integrity",
-      "Complex stored procedures for business logic automation",
-      "Real-time inventory tracking with predictive analytics",
-      "Advanced reporting dashboard with data visualization",
-      "Multi-tenant architecture supporting 50+ clients"
-    ],
-    icon: <img src="/icons/fims.png" alt="FIMS DBMS" className="w-10 h-10 object-contain" />,
-    color: "from-amber-400 to-orange-500",
-    category: "Database",
-    image: "/api/placeholder/600/400",
-    github: "https://github.com/divyapatel9/food-industry-dbms"
-  },
+  title: "Serverless Order Tracker Using AWS",
+  description: "Real-time order tracking with DynamoDB, Lambda, and S3",
+  longDescription: "Built a fully serverless, event-driven system to track and log customer orders in real-time using AWS services. The architecture integrates API Gateway, AWS Lambda, DynamoDB, S3, and SNS to ingest, process, and notify about incoming orders. It demonstrates real-world usage of DynamoDB Streams, Lambda triggers, and S3 object storage in a scalable, decoupled manner.",
+  technologies: ["AWS Lambda", "DynamoDB", "API Gateway", "S3", "SNS", "Python", "Boto3"],
+  features: [
+    "Accepts orders through an API Gateway endpoint secured by AWS Lambda",
+    "Stores order data in DynamoDB with automatic timestamping",
+    "Uses DynamoDB Streams to trigger a Lambda function for post-processing",
+    "Lambda function stores each order as a JSON file in an S3 bucket",
+    "SNS integration sends email notifications upon new order arrival",
+    "IAM roles with granular permissions ensure secure access to all resources",
+    "CloudWatch logs used for monitoring Lambda execution and errors"
+  ],
+  icon: <img src="/icons/aws.png" alt="AWS Project" className="w-10 h-10 object-contain" />,
+  color: "from-yellow-400 to-orange-500",
+  category: "Cloud",
+  image: "/api/placeholder/600/400"
+},
+  
   {
     title: "Interactive Data Analytics Visualizations",
     description: "Interactive D3.js dashboard for resident economic trends",
@@ -137,6 +139,24 @@ const Projects = () => {
     color: "from-indigo-400 to-blue-600",
     category: "Serverless",
     image: "/api/placeholder/600/400"
+  },
+  {
+    title: "FIMS - Food Industry Management",
+    description: "Comprehensive database system for food industry operations",
+    longDescription: "Designed and implemented a complete food industry management system with advanced database modeling, optimization, and real-time data processing. The system manages inventory, supply chain, and quality control for multiple food processing facilities.",
+    technologies: ["MySQL", "PostgreSQL", "Stored Procedures", "Triggers", "ER Modeling"],
+    features: [
+      "3NF normalized database design for data integrity",
+      "Complex stored procedures for business logic automation",
+      "Real-time inventory tracking with predictive analytics",
+      "Advanced reporting dashboard with data visualization",
+      "Multi-tenant architecture supporting 50+ clients"
+    ],
+    icon: <img src="/icons/fims.png" alt="FIMS DBMS" className="w-10 h-10 object-contain" />,
+    color: "from-amber-400 to-orange-500",
+    category: "Database",
+    image: "/api/placeholder/600/400",
+    github: "https://github.com/divyapatel9/food-industry-dbms"
   },
   {
     title: "Mouse Control Using Hand Gestures",

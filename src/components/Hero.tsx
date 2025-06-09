@@ -176,7 +176,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="group flex items-center space-x-2 bg-gradient-to-r from-blue-400/20 to-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 md:px-6 py-3 hover:from-blue-400/30 hover:to-blue-500/30 transition-all duration-300 hover:scale-105"
           >
-            <ExternalLink size={20} />
+            <Github size={20} />
             <span className="hidden sm:inline">Github</span>
           </a>
         </div>
@@ -188,9 +188,9 @@ const Hero = () => {
           >
             Explore My Work
           </button>
-          <button className="border border-blue-500 text-blue-400 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105">
+          {/* <button className="border border-blue-500 text-blue-400 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105">
             View Resume
-          </button>
+          </button> */}
         </div>
       </div>
 
