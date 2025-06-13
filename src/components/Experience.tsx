@@ -28,7 +28,7 @@ const Experience = () => {
       title: "Machine Learning Research Intern",
       company: "Tata Consultancy Services",
       location: "Remote",
-      duration: "Jun 2023 - Aug 2023",
+      duration: "Jan 2023 - May 2023",
       type: "Internship",
       description:
         "Spearheaded cutting-edge research in Generative Adversarial Networks, focusing on advancing deep learning architectures and optimization techniques.",
@@ -46,7 +46,7 @@ const Experience = () => {
       title: "Junior Web Developer",
       company: "Kumbh Design",
       location: "Remote",
-      duration: "Feb 2023 - May 2023",
+      duration: "Sep 2022 - Jan 2023",
       type: "Internship",
       description:
         "Contributed to modern web development projects with focus on responsive design and seamless API integrations.",
@@ -64,7 +64,7 @@ const Experience = () => {
       title: "Software Development Intern",
       company: "Upjao",
       location: "Remote",
-      duration: "Jul 2022 - Jan 2023",
+      duration: "Jun 2022 - Aug 2023",
       type: "Internship",
       description:
         "Developed automated solutions and optimized database systems for enhanced application performance and scalability.",

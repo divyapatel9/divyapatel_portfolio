@@ -117,7 +117,7 @@ const Hero = () => {
                 <Avatar className="w-full h-full border-2 border-blue-500/20 shadow-2xl shadow-blue-500/30 group-hover:shadow-blue-400/40 transition-all duration-500 group-hover:scale-105">
                   <AvatarImage 
                     src="/icons/profile.jpg"
-                    alt="Divya Patel - Software Engineer"
+                    alt="Arth Patel - Software Engineer"
                     className="object-cover"
                   />
                   <AvatarFallback className="bg-gradient-to-br from-blue-600 to-blue-800 text-white text-3xl md:text-4xl font-bold">
