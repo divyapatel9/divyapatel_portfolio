@@ -117,7 +117,7 @@ const Hero = () => {
                 <Avatar className="w-full h-full border-2 border-blue-500/20 shadow-2xl shadow-blue-500/30 group-hover:shadow-blue-400/40 transition-all duration-500 group-hover:scale-105">
                   <AvatarImage 
                     src="/icons/profile.jpg"
-                    alt="Arth Patel - Software Engineer"
+                    alt="Divya Patel - Software Engineer"
                     className="object-cover"
                   />
                   <AvatarFallback className="bg-gradient-to-br from-blue-600 to-blue-800 text-white text-3xl md:text-4xl font-bold">
@@ -140,7 +140,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent animate-scale-in">
-            Arth Patel
+            Divya Patel
           </h1>
           <div className="text-xl md:text-2xl lg:text-3xl text-blue-200 mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Software Engineer
@@ -152,7 +152,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.9s' }}>
           <a
-            href="https://linkedin.com/in/Arth-9-patel/"
+            href="https://linkedin.com/in/divya-9-patel/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center space-x-2 bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-4 md:px-6 py-3 hover:from-blue-500/30 hover:to-blue-600/30 transition-all duration-300 hover:scale-105"
@@ -163,7 +163,7 @@ const Hero = () => {
           </a>
           
           <a
-            href="mailto:9Arthpatel@gmail.com"
+            href="mailto:9divyapatel@gmail.com"
             className="group flex items-center space-x-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-4 md:px-6 py-3 hover:from-blue-600/30 hover:to-blue-500/30 transition-all duration-300 hover:scale-105"
           >
             <Mail size={20} />
@@ -171,7 +171,7 @@ const Hero = () => {
           </a>
           
           <a
-            href="https://github.com/Arthpatel9"
+            href="https://github.com/divyapatel9"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center space-x-2 bg-gradient-to-r from-blue-400/20 to-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 md:px-6 py-3 hover:from-blue-400/30 hover:to-blue-500/30 transition-all duration-300 hover:scale-105"
