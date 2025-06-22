@@ -82,7 +82,27 @@ const Projects = () => {
   icon: <img src="/icons/aws.png" alt="AWS Project" className="w-10 h-10 object-contain" />,
   color: "from-yellow-400 to-orange-500",
   category: "Cloud",
-  image: "/api/placeholder/600/400"
+  image: "/api/placeholder/600/400",
+  github: "https://github.com/divyapatel9/Serverless-Order-Tracker-Using-DynamoDB"
+},
+{
+  title: "OptiPlanDB",
+  description: "A modular distributed SQL query optimizer with visual plan inspection and cost-based optimization.",
+  longDescription: "OptiPlanDB is an intelligent query optimization engine built to simulate how modern distributed databases like Redshift or Presto generate efficient execution plans. The system constructs logical plans from SQL queries, applies rule-based rewrites, estimates cost using a customizable model, and generates physical plans for execution. Final plans are exported as JSON and visualized with Graphviz for clear inspection.",
+  technologies: ["Python", "SQL Parser", "Rule Engine", "Cost Model", "Graphviz", "JSON", "Flask", "Jupyter Notebook"],
+  features: [
+    "Custom SQL parser to convert input queries into logical plan trees",
+    "Rule-based optimizer that rewrites query plans using heuristics",
+    "Cost-based optimizer that chooses the most efficient execution path",
+    "Supports join order rearrangement, predicate pushdown, and projection pruning",
+    "Exports both logical and physical plans to JSON for easy visualization and comparison",
+    "Graphviz-based visualizer to display and compare logical vs physical plans side by side"
+  ],
+  icon: <img src="/icons/optid.png" alt="OptiPlanDB" className="w-10 h-10 object-contain" />,
+  color: "from-blue-600 to-cyan-500",
+  category: "Backend & Databases",
+  image: "/api/placeholder/600/400",
+  github: "https://github.com/divyapatel9/query-optimizer"
 },
   
   {
