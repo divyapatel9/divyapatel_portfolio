@@ -25,6 +25,24 @@ const Experience = () => {
 
   const experiences = [
     {
+  title: "Software Engineer",
+  company: "Lux Vitae",
+  location: "Remote",
+  duration: "May 2025 - Present",
+  type: "Full-Time",
+  description:
+    "Designed and built key system components for an AI-integrated Linux-based operating system, focusing on gesture recognition and modular communication infrastructure.",
+  achievements: [
+    "Architected a scalable inter-process communication (IPC) framework using D-Bus for seamless interaction between gesture sensing, logic, and actuation layers",
+    "Developed a low-level gesture processing pipeline in C, integrating Ultraleap SDK to interpret 3D hand motion into real-time system commands",
+    "Implemented gesture_to_json APIs to serialize hand-tracking data, enabling real-time, user-driven control within the OS",
+    "Established modular communication architecture that accelerated internal testing and cross-module integrations by 60%",
+  ],
+  technologies: ["C", "D-Bus", "Ultraleap SDK", "Linux", "API Development", "JSON"],
+  color: "from-purple-500 to-indigo-600",
+  icon: <img src="/icons/luxvitae.png" alt="Lux Vitae" className="w-20 h-20 object-contain" />,
+},
+    {
       title: "Machine Learning Research Intern",
       company: "Tata Consultancy Services",
       location: "Remote",

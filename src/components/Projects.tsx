@@ -29,6 +29,25 @@ const Projects = () => {
 
  const projects = [
   {
+  title: "Cloud-Native Flight Intelligence",
+  description: "A cloud-native data platform to predict flight delays in near real-time using live telemetry and machine learning.",
+  longDescription: "An end-to-end data engineering and MLOps project built entirely on Google Cloud. This platform automates the ingestion of live flight data via a Cloud Composer (Airflow) pipeline, stores and transforms it in BigQuery using dbt, and trains a predictive XGBoost model to forecast flight delays. The final insights are served through a scalable, serverless Streamlit dashboard deployed on Cloud Run.",
+  technologies: ["Google Cloud Platform (GCP)", "Cloud Composer (Airflow)", "BigQuery", "dbt", "Python", "XGBoost", "Streamlit", "Docker", "Cloud Run"],
+  features: [
+    "Automated near real-time data pipeline for live flight telemetry ingestion",
+    "Scalable cloud data warehouse in BigQuery handling millions of flight records",
+    "Modern, SQL-based data transformation and quality testing with dbt",
+    "Predictive ML model (XGBoost) trained and versioned in a managed Airflow environment",
+    "Live, interactive dashboard with real-time flight tracking on a map",
+    "Fully serverless and scalable deployment using Docker and Cloud Run"
+  ],
+  icon: <img src="/icons/flightproject.png" alt="FlightSense AI" className="w-10 h-10 object-contain" />, // Placeholder icon
+  color: "from-blue-500 to-indigo-600",
+  category: "Cloud Data Engineering & MLOps",
+  image: "/api/placeholder/600/400",
+  github: "https://github.com/divyapatel9/flightsense-gcp"
+},
+  {
     title: "Secure and Private On-Device RAG Engine",
     description: "Advanced retrieval-augmented generation system with semantic search capabilities",
     longDescription: "Developed a sophisticated on-device RAG engine that prioritizes privacy and security while delivering exceptional search performance through semantic understanding and query expansion. This system processes data locally, ensuring complete privacy while maintaining high-performance semantic search capabilities.",
