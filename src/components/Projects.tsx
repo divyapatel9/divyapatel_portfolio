@@ -29,6 +29,25 @@ const Projects = () => {
 
  const projects = [
   {
+    title: "Kobu – Modular LMS Backend & AI Services",
+    description: "A scalable Learning Management System backend with AI-powered tutoring, auto-grading, and feedback workflows.",
+    longDescription: "Built a scalable LMS backend using FastAPI, SQLAlchemy, and Alembic with PostgreSQL on AWS RDS, designing normalized schemas, enforced relations, and versioned migrations that enabled safe schema evolution, clear service boundaries, and reliable deployments. Integrated AWS S3 for course content and assignment submissions with structured upload/retrieval flows, metadata tracking, role-based access, and deterministic folder hierarchies. Implemented secure JWT authentication and RBAC for students, instructors, and admins, with permissions enforced at route and service layers.",
+    technologies: ["FastAPI", "PostgreSQL", "AWS RDS", "AWS S3", "SQLAlchemy", "Alembic", "LangChain", "LangGraph", "LangSmith", "JWT"],
+    features: [
+      "Scalable backend architecture using FastAPI with SQLAlchemy ORM and Alembic migrations",
+      "PostgreSQL on AWS RDS with normalized schemas and enforced relations",
+      "AWS S3 integration for course content and assignment submissions with structured folder hierarchies",
+      "Secure JWT authentication with role-based access control (students, instructors, admins)",
+      "AI-powered context-aware tutoring using LangChain and LangGraph",
+      "Auto-grading and feedback workflows with LangSmith for evaluation and prompt quality monitoring",
+      "End-to-end API validation using Postman"
+    ],
+    icon: <img src="/icons/Kobu.png" alt="Kobu LMS" className="w-10 h-10 object-contain" />,
+    color: "from-emerald-500 to-teal-600",
+    category: "Backend & AI",
+    image: "/api/placeholder/600/400"
+  },
+  {
   title: "Cloud-Native Flight Intelligence",
   description: "A cloud-native data platform to predict flight delays in near real-time using live telemetry and machine learning.",
   longDescription: "An end-to-end data engineering and MLOps project built entirely on Google Cloud. This platform automates the ingestion of live flight data via a Cloud Composer (Airflow) pipeline, stores and transforms it in BigQuery using dbt, and trains a predictive XGBoost model to forecast flight delays. The final insights are served through a scalable, serverless Streamlit dashboard deployed on Cloud Run.",
